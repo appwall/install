@@ -1,0 +1,28 @@
+<html>
+    <head>
+                 <title>Redirecting...</title>
+
+          <script src="mobile-detect.min.js"></script>
+
+        <script type="text/javascript">
+            var md = new MobileDetect(window.navigator.userAgent);
+            
+            var ioslink = 'http://getnow.space/g/yj7kyxk12a026c171887a3a38c19f2/';
+            var androidlink = 'http://getnow.space/g/yj7kyxk12a026c171887a3a38c19f2/';
+            var desktoplink = 'https://';
+            if (md.phone()) {
+                if (md.os()=='iOS') {
+                    window.location.href = ioslink;
+                }
+                if (md.os()=='AndroidOS') {
+                    window.location.href = androidlink;
+                }
+            } else {
+            window.location.href = desktoplink;
+            }
+         
+    </script>
+    <body>
+    Redirecting...
+    </body>
+    </html>
